@@ -1,0 +1,63 @@
+baseURL = "https://nownij.github.io/"
+   languageCode = "en-us"
+   title = "My Developer Blog"
+   theme = "PaperMod"
+
+   [params]
+     # 메인 페이지 프로필 설정
+     [params.profileMode]
+       enabled = true
+       title = "Welcome to My Blog"
+       subtitle = "A place where I share my thoughts on development"
+       imageUrl = "/images/profile.jpg"
+       imageTitle = "My profile image"
+       imageWidth = 120
+       imageHeight = 120
+       [[params.profileMode.buttons]]
+         name = "Posts"
+         url = "/posts"
+       [[params.profileMode.buttons]]
+         name = "Tags"
+         url = "/tags"
+
+     # 소셜 아이콘 설정
+     [[params.socialIcons]]
+       name = "github"
+       url = "https://github.com/nownij"
+
+     # 다크 모드 설정
+     defaultTheme = "auto"
+     disableThemeToggle = false
+
+     # 홈페이지 설정
+     [params.homeInfoParams]
+       Title = "Hi there 👋"
+       Content = """
+       Welcome to my blog. Here I write about my experiences in software development,
+       share tips and tricks, and discuss new technologies.
+       """
+
+   # 메뉴 설정
+   [[menu.main]]
+     identifier = "home"
+     name = "Home"
+     url = "/"
+     weight = 10
+   [[menu.main]]
+     identifier = "posts"
+     name = "Posts"
+     url = "/posts/"
+     weight = 20
+   [[menu.main]]
+     identifier = "tags"
+     name = "Tags"
+     url = "/tags/"
+     weight = 30
+   [[menu.main]]
+     identifier = "about"
+     name = "About"
+     url = "/about/"
+     weight = 40
+
+   # 페이지네이션 설정
+   paginate = 5
